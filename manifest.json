@@ -1,18 +1,15 @@
 {
   "manifest_version": 2,
 
-  "name": "youtube2HTML5",
+  "name": "Youtube2HTML5",
   "description": "Reload the youtube page in HTML5",
   "version": "1.0",
   "manifest_version": 2,
 
-  // "browser_action": {
-  //   "default_icon": "icon.png"
-  // },
   "icons": { 
-            "16":"icon.png", 
-            "48":"icon.png", 
-            "128":"icon.png" 
+            "16":"images/icon.png", 
+            "48":"images/icon.png", 
+            "128":"images/icon.png" 
         }, 
 
   // "permissions": [
@@ -22,8 +19,8 @@
     {
       "matches": ["http://www.youtube.com/*"],
      
-      "js": ["jquery.js", "script.js"]
+      "js": ["scripts/jquery.js", "scripts/script.js"]
     }],
 
-   "web_accessible_resources": ["script.js","htmlify.png"]
+   "web_accessible_resources": ["scripts/script.js","images/htmlify.png"]
 }

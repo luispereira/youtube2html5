@@ -1,4 +1,4 @@
-var img = chrome.runtime.getURL('htmlify.png');
+var img = chrome.runtime.getURL('../images/htmlify.png');
 
 $("#watch-like-dislike-buttons").append(
 	$('<img></img>').attr(
