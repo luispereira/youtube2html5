@@ -1,11 +1,23 @@
+var img = chrome.runtime.getURL('htmlify.png');
 
-$("#watch-headline-title").append($('<input id="buttonHTML5"></input>').attr({'type': 'button'})
-	.val("HTML5 me baby").click(function(){
+$("#watch-like-dislike-buttons").append(
+	$('<img></img>').attr(
+		{'class':'yt-uix-button yt-uix-button-icon yt-uix-button-empty','type': 'image','id':'buttonHTML5','src': img}
+	).val("HTML5 me baby").click(
+		function(){
             goToHTML5();
-        }));
-
-$("#buttonHTML5").css("background-image: url(icon.png");
-
+		}
+	).css(
+		'border-style', 'none'
+	).hover(
+		function(){
+			$("#buttonHTML5").css("opacity","0.6");
+		},function(){
+			$("#buttonHTML5").css("opacity","1");
+		}
+	)
+);
+		
 function goToHTML5() {
 	var tablink = $(location).attr('href');
 
