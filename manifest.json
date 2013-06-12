@@ -12,12 +12,9 @@
             "128":"images/icon.png" 
         }, 
 
-  // "permissions": [
-  //   "tabs"],
-
    "content_scripts": [
     {
-      "matches": ["http://www.youtube.com/*"],
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
      
       "js": ["scripts/jquery.js", "scripts/script.js"]
     }],
