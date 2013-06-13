@@ -19,5 +19,5 @@
       "js": ["scripts/jquery.js", "scripts/script.js"]
     }],
 
-   "web_accessible_resources": ["scripts/script.js","images/htmlify.png"]
+   "web_accessible_resources": ["scripts/script.js","images/htmlify.png","images/htmlhov.png"]
 }
