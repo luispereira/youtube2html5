@@ -1,4 +1,5 @@
 var img = chrome.runtime.getURL('../images/htmlify.png');
+var hovimg = chrome.runtime.getURL('../images/htmlhov.png');
 
 $("#watch-like-dislike-buttons").append(
 	$('<img></img>').attr(
@@ -11,8 +12,9 @@ $("#watch-like-dislike-buttons").append(
 		'border-style', 'none'
 	).hover(
 		function(){
-			$("#buttonHTML5").css("opacity","0.6");
+			$("#buttonHTML5").css("content","url("+ hovimg +")");
 		},function(){
+			$("#buttonHTML5").css("content","url("+ img + ")");
 			$("#buttonHTML5").css("opacity","1");
 		}
 	)
